@@ -1,16 +1,24 @@
-# React + Vite
+# SynthCalc
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, interactive periodic table calculator for material synthesis batch planning. Calculate exact weighing amounts for stoichiometric chemical formulas with support for all 118 elements.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interactive Periodic Table** - Visual element selector with all 118 elements
+- **Color-Coded Element Types** - 10 element categories with distinct pastel colors
+- **Decimal Coefficient Support** - Precise stoichiometric ratios (e.g., Fe₀.₃₃₃NbS₂)
+- **Real-Time Calculations** - Live calculation of molar mass and individual element masses
 
-## React Compiler
+## How It Works
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Click "Add Element" to select elements from the periodic table
+2. Adjust stoichiometric coefficients using sliders or input fields
+3. Set your target batch mass in grams
+4. Get exact weighing amounts for each element
 
-## Expanding the ESLint configuration
+## Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** - UI framework with hooks for state management
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first styling
+- **Pure JavaScript** - No external chemistry libraries, all calculations done in-memory
